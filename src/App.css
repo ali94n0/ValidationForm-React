@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+.App{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #ede9fe;
+  padding: 10px;
+  border-radius: 7px;
+  
+}
+.formControl{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.formControl input{
+  width: 22rem;
+padding: 7px 15px;
+border: 1px solid #7e22ce;
+border-radius: 7px;
+color: #581c87;
+font-size: 15px;
+}
+.formControl input:focus{
+  border: 2px solid #7e22ce;
+  
+}
+.formControl label{
+  color:#64748b ;
+  /* font-size: 16px; */
+}
+.radioFormControl{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 7px;
+}
+.radioFormControl label{
+  margin-right: 10px;
+  margin-left: 3px;
+  color:#64748b ;
+}
+.radioFormControl input,.radioFormControl label{
+  cursor: pointer;
+}
+.formControl select{
+  width: 22rem;
+padding: 7px 15px;
+border: 1px solid #7e22ce;
+border-radius: 7px;
+color: #581c87;
+font-size: 15px;
+}
+form button{
+  padding: 7px 15px;
+background-color:#7e22ce;
+border-radius: 7px;
+color: #f8fafc;
+margin-top: 5px;
+font-size: 15px;
+cursor: pointer;
+margin: 0px 7px;
+}
+form button:disabled{
+  background-color:#d4d4d8;
+  cursor: not-allowed;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.labelBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2px 5px;
+}
+form p{
+  color:#f43f5e;
+  font-size: 12px;
 }
